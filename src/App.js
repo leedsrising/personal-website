@@ -20,10 +20,9 @@ function App() {
   return (
     <div className="App">
       <div class="description-div topnav">
-        <a href="#home"><b>leedsrising.com</b></a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#home" class="homelink"><b>leedsrising.com</b></a>
+        <a href="#news">writing</a>
+        <a href="#about">building</a>
       </div>
       <header className="App-header">
         <p>
