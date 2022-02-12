@@ -13,7 +13,7 @@ function Home() {
         <p>
           <b>Hello! I'm Leeds</b>
           <div class="description-div description-text">
-            <p class="description-text">I'm a PM interested in programming, philosophy, history, startups, and investing. I'm currently working at Golden.</p>
+            <p class="description-text">I'm a PM interested in programming, philosophy, history, startups, and investing. I'm currently working at <a href="golden.com" class="Bubble-text">Golden</a>.</p>
             <p class="description-text">I started writing in 2021, and want to continually expand this site with what im learning about software development, design, product, their intersection, and everything in between.</p>
           </div>
         </p>
