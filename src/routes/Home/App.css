@@ -40,7 +40,8 @@
 }
 
 .homelink {
-  margin-left: 0px
+  margin-left: 0px;
+  font-weight: bold;
 }
 
 .topnav a {

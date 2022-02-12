@@ -1,5 +1,6 @@
 import './App.css';
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { 
   FaLinkedin,
@@ -13,9 +14,9 @@ function TopNav() {
   return (
     <div class="topnav">
       <div class="topnav-left">
-        <a href="#home" class="homelink"><b>leedsrising.com</b></a>
-        <a href="#writing">writing</a>
-        <a href="#projects">projects</a>
+        <Link to="/home" class="homelink">leedsrising.com</Link>
+        <Link to="/writing">writing</Link>
+        <Link to="/projects">projects</Link>
       </div>
       <div class="topnav-right">
         <a href="https://www.linkedin.com/in/leedsrising/"><FaLinkedin class="fa-linkedin fa-icon"/></a>

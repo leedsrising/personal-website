@@ -1,24 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
 import './index.css';
 import App from './routes/Home/App';
-import Projects from "./routes/projects";
-import Writing from "./routes/writing";
+import Projects from "./routes/Projects/projects";
+import Writing from "./routes/Writing/writing";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <Routes>
         <Route path="/" element={<App />} />
-        <Route path="#projects" element={<Projects />} />
-        <Route path="#writing" element={<Writing />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="writing" element={<Writing />} />
     </Routes>
-  </HashRouter>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
