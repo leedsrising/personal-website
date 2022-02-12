@@ -5,17 +5,38 @@
   color: black;
 }
 
-.App {
-  width: 980px;
-  text-align: center;
+.Home {
+  width: 800px;
   margin: 0px auto;
   position: relative
+}
+
+.Home-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  padding-top: 50px;
+  font-size: calc(10px + 2vmin);
+  color: #f5f5f5;
 }
 
 /* /home */
 
 .topnav {
-  padding-top: 50px
+  width: 800px;
+  margin: 0px auto;
+  padding-top: 50px;
+  display: inline-block;
+}
+
+.topnav-left {
+  float: left
+}
+
+.topnav-right {
+  float: right
 }
 
 .homelink {
@@ -53,7 +74,6 @@
 /* /home */
 
 .description-div {
-  width: 50%;
   text-align: left;
   margin: 0 auto;
   overflow:hidden;
@@ -66,16 +86,7 @@
   line-height: 1.5;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: top;
-  justify-content: top;
-  padding-top: 50px;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 @keyframes App-logo-spin {
   from {
@@ -88,9 +99,14 @@
 
 /* font awesome */
 
-.fa-linkedin {
+.fa-icon {
+  width: 20px;
+  height: 20px;
   padding-left:5px;
   padding-right:5px;
+}
+
+.fa-linkedin {
   color: #f8f6f6;
 }
 .fa-linkedin:hover {
@@ -98,8 +114,6 @@
 }
 
 .fa-github {
-  padding-left:5px;
-  padding-right:5px;
   color: #f8f6f6;
 }
 .fa-github:hover {
@@ -107,8 +121,6 @@
 }
 
 .fa-ethereum {
-  padding-left:5px;
-  padding-right:5px;
   color: #f8f6f6;
 }
 .fa-ethereum:hover {

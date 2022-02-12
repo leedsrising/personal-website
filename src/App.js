@@ -4,27 +4,33 @@ import React from "react";
 import { 
   FaLinkedin,
   FaGithubSquare,
-  FaEthereum,
-  FaGem,
-  FaHeart
+  FaEthereum
 } from "react-icons/fa";
 
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 
 function TopNav() {
-  
+  return (
+    <div class="topnav">
+      <div class="topnav-left">
+        <a href="#home" class="homelink"><b>leedsrising.com</b></a>
+        <a href="#writing">writing</a>
+        <a href="#projects">projects</a>
+      </div>
+      <div class="topnav-right">
+        <a href="https://www.linkedin.com/in/leedsrising/"><FaLinkedin class="fa-linkedin fa-icon"/></a>
+        <a href="https://github.com/leedsrising"><FaGithubSquare class="fa-github fa-icon"/></a>
+        <a href="https://etherscan.com/address/0xce2772143637052abddcad413826c736fc5c03ee"><FaEthereum class="fa-ethereum fa-icon"/></a>
+      </div>
+    </div>
+  )
 }
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <div class="description-div topnav">
-        <a href="#home" class="homelink"><b>leedsrising.com</b></a>
-        <a href="#news">writing</a>
-        <a href="#about">building</a>
-      </div>
-      <header className="App-header">
+    <div class="Home">
+      <TopNav/>
+      <header className="Home Home-header">
         <p>
           <div><b>Hello! I'm Leeds</b></div>
           <div class="description-div description-text">
@@ -32,14 +38,9 @@ function App() {
             <p class="description-text">I started writing in 2021, and want to continually expand this site with what im learning about software development, design, product, their intersection, and everything in between.</p>
           </div>
         </p>
-        <div>
-          <a href="https://www.linkedin.com/in/leedsrising/"><FaLinkedin class="fa-linkedin"/></a>
-          <a href="https://github.com/leedsrising"><FaGithubSquare class="fa-github"/></a>
-          <a href="https://etherscan.com/address/0xce2772143637052abddcad413826c736fc5c03ee"><FaEthereum class="fa-ethereum"/></a>
-        </div>
       </header>
     </div>
     );
 }
 
-export default App;
+export default Home;
