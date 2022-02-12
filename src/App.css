@@ -1,0 +1,127 @@
+/* everything */
+
+* {
+  font-family: serif;
+  color: black;
+}
+
+.Home {
+  width: 800px;
+  margin: 0px auto;
+  position: relative
+}
+
+.Home-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  padding-top: 50px;
+  font-size: calc(10px + 2vmin);
+  color: #f5f5f5;
+}
+
+/* /home */
+
+.topnav {
+  width: 800px;
+  margin: 0px auto;
+  padding-top: 50px;
+  display: inline-block;
+}
+
+.topnav-left {
+  float: left
+}
+
+.topnav-right {
+  float: right
+}
+
+.homelink {
+  margin-left: 0px;
+  font-weight: bold;
+}
+
+.topnav a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  margin: 100px 10px 0px 0px
+}
+
+.topnav a:hover {
+  color: #000;
+}
+
+.topnav a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.15s ease;
+}
+
+.topnav a:hover::before {
+  transform: scaleX(1);
+}
+
+/* /home */
+
+.description-div {
+  text-align: left;
+  margin: 0 auto;
+  overflow:hidden;
+}
+
+.description-text {
+  overflow:visible;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* font awesome */
+
+.fa-icon {
+  width: 20px;
+  height: 20px;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.fa-linkedin {
+  color: #f8f6f6;
+}
+.fa-linkedin:hover {
+  color: #180cb8;
+}
+
+.fa-github {
+  color: #f8f6f6;
+}
+.fa-github:hover {
+  color: #3f3434;
+}
+
+.fa-ethereum {
+  color: #f8f6f6;
+}
+.fa-ethereum:hover {
+  color: #180c0c;
+}
