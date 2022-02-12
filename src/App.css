@@ -17,7 +17,6 @@
   flex-direction: column;
   align-items: top;
   justify-content: top;
-  padding-top: 50px;
   font-size: calc(10px + 2vmin);
   color: #f5f5f5;
 }
@@ -36,7 +35,8 @@
 }
 
 .topnav-right {
-  float: right
+  float: right;
+  padding-right: 20px;
 }
 
 .homelink {
@@ -99,29 +99,7 @@
 /* font awesome */
 
 .fa-icon {
-  width: 20px;
-  height: 20px;
+  font-size: 20px;
   padding-left:5px;
   padding-right:5px;
-}
-
-.fa-linkedin {
-  color: #f8f6f6;
-}
-.fa-linkedin:hover {
-  color: #180cb8;
-}
-
-.fa-github {
-  color: #f8f6f6;
-}
-.fa-github:hover {
-  color: #3f3434;
-}
-
-.fa-ethereum {
-  color: #f8f6f6;
-}
-.fa-ethereum:hover {
-  color: #180c0c;
 }
