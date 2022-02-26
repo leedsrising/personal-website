@@ -8,7 +8,9 @@
 .mui-override {
   position: absolute;
   font-family: serif;
+  font-style: italic;
   color: black;
+  margin: 0px;
   text-decoration: none;
 }
 
@@ -28,10 +30,6 @@
 .mui-override:hover::before {
   transform: scaleX(1);
 }
-
-/* .mui-override:hover {
-  background-color: rgb(65, 23, 23);
-} */
 
 /* /home */
 
