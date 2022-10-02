@@ -54,7 +54,7 @@
 
 
 .Home {
-  width: 800px;
+  width: 80%;
   margin: 0px auto;
   position: relative
 }
@@ -71,15 +71,19 @@
 
 /* nav */
 
+.nav-icon {
+  margin: 0px 0px 0px 20px
+}
+
 .topnav {
-  width: 800px;
+  width: 100%;
   margin: 0px auto;
   padding-top: 50px;
   display: inline-block;
 }
 
 .topnav-left {
-  float: left
+  float: left;
 }
 
 .topnav-right {
@@ -92,18 +96,19 @@
   font-weight: bold;
 }
 
-.topnav a {
+/* teel underscore */
+
+.teel-underscore a, span {
   position: relative;
   color: #000;
   text-decoration: none;
-  margin: 100px 10px 0px 0px
 }
 
-.topnav a:hover {
+.teel-underscore a:hover, span:hover {
   color: #000;
 }
 
-.topnav a::before {
+.teel-underscore a:before, span:before {
   content: "";
   position: absolute;
   display: block;
@@ -116,11 +121,25 @@
   transition: transform 0.15s ease;
 }
 
-.topnav a:hover::before {
+.teel-underscore a:hover::before, span:hover::before{
   transform: scaleX(1);
 }
 
 /* /home */
+
+.dont-break-out {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
 
 .description-div {
   text-align: left;
@@ -129,10 +148,13 @@
 }
 
 .description-text {
-  overflow:visible;
+  display: inline-block;
+  margin: 15px auto auto auto;
+  /* width: 100%; */
   font-size: 20px;
   text-align: left;
   line-height: 1.5;
+  white-space: normal;
 }
 
 @keyframes App-logo-spin {

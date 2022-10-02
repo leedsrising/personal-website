@@ -12,11 +12,11 @@ import {
 
 function TopNav() {
     return (
-      <div class="topnav">
+      <div class="topnav teel-underscore dont-break-out">
         <div class="topnav-left">
           <Link to="/" class="homelink">leedsrising.com</Link>
-          <Link to="/writing">writing</Link>
-          <Link to="/projects">projects</Link>
+          <Link to="/writing" class="nav-icon">writing</Link>
+          <Link to="/projects" class="nav-icon">projects</Link>
         </div>
         <div class="topnav-right">
           <a href="https://www.linkedin.com/in/leedsrising/">
