@@ -15,6 +15,15 @@ function Home() {
         </p>
         <p class="description-text">I'm a PM at <a href="https://golden.com">Golden</a>, where my role has spanned product, design, management, and research across Golden.com and the Golden Protocol. My interests include product design, programming, philosophy, startups, investing, and photography.</p>
       </div>
+      <iframe
+        title="substack-signup"
+        src="https://leedsrising.substack.com/embed"
+        style={{
+          'width':'100%',
+          'margin': '15px auto auto auto'
+        }}
+        frameborder="0">
+      </iframe>
     </div>
     );
 }
