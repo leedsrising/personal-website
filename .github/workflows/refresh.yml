@@ -12,9 +12,9 @@ jobs:
       - name: Trigger GitHub pages rebuild
         run: |
           curl --fail --request POST \
-            --url https://api.github.com/repos/$leedsrising.github.io/pages/builds \
+            --url https://api.github.com/repos/${{ github.repository }}/pages/builds \
             --header "Authorization: Bearer $USER_TOKEN"
         env:
           # You must create a personal token with repo access as GitHub does
           # not yet support server-to-server page builds.
-          USER_TOKEN: $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
+          USER_TOKEN: ${{ secrets.USER_TOKEN }}
